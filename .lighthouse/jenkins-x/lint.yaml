@@ -230,7 +230,7 @@ spec:
           resources: {}
         - env:
           - name: RUN_LOCAL
-            value: true
+            value: "true"
           - name: DEFAULT_WORKSPACE	
             value: /workspace/source
           image: github/super-linter:latest
