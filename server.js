@@ -1,11 +1,12 @@
 
-var http = require('http');
+    var http = require('http');
 var fileSystem = require('fs');
 
-var server = http.createServer(function(req, resp){
+    var server = http.createServer(function(req, resp){
 	var fileName = './index.html';
 	var contentType = 'text/html';
 	var path = req.url;
+
 	if (path)    {
 		if (path.endsWith(".svg")) {
 			contentType = 'image/svg+xml';
@@ -28,6 +29,7 @@ var server = http.createServer(function(req, resp){
 			resp.end();
 		}
 	});
+
 });
 
 server.listen(8080);

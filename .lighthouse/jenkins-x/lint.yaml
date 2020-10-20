@@ -221,10 +221,10 @@ spec:
           name: git-merge
           resources: {}
         - args:
-          - gitops
-          - variables
+          - 'mkdir -p super-linter.report'
           command:
-          - jx
+          - /bin/bash
+          - c
           image: gcr.io/jenkinsxio/jx-cli:latest
           name: jx-variables
           resources: {}
