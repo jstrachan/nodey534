@@ -6,7 +6,7 @@ var server = http.createServer(function(req, resp){
 	var fileName = './index.html';
 	var contentType = 'text/html';
 	var path = req.url;
-	if (path) {
+	if (path)    {
 		if (path.endsWith(".svg")) {
 			contentType = 'image/svg+xml';
 		} else if (path.endsWith(".css")) {
