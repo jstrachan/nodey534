@@ -224,7 +224,7 @@ spec:
           - 'mkdir -p super-linter.report'
           command:
           - /bin/bash
-          - c
+          - -c
           image: gcr.io/jenkinsxio/jx-cli:latest
           name: jx-variables
           resources: {}
