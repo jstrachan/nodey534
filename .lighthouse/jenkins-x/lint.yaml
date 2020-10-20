@@ -221,12 +221,12 @@ spec:
           name: git-merge
           resources: {}
         - args:
-          - 'mkdir -p super-linter.report'
+          - 'mkdir -p super-linter.report && ls -al'
           command:
           - /bin/bash
           - -c
           image: gcr.io/jenkinsxio/jx-cli:latest
-          name: jx-variables
+          name: mkdir-linter-report
           resources: {}
         - env:
           - name: RUN_LOCAL
