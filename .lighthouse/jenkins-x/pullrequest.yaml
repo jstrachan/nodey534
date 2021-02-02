@@ -268,6 +268,14 @@ spec:
           image: gcr.io/jenkinsxio/jx-cli:latest
           name: promote-jx-preview
           resources: {}
+        - args:
+          - jx gitops helm build
+          command:
+          - /bin/sh
+          - -c
+          image: gcr.io/jenkinsxio/jx-cli:latest
+          name: helm-build
+          resources: {}
         volumes:
         - emptyDir: {}
           name: workspace-volume
